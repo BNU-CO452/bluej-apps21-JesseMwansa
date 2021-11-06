@@ -24,7 +24,7 @@ public class Student
      */
     public Student()
     {
-        this("Derek", 12345678);
+        this("Jesse Mwansa", 22140600);
     }
     
     /**

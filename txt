@@ -1,0 +1,89 @@
+Student student1 = new Student("Jesse Mwansa", 22140600);
+student1.print();
+ Student ID: 22140600, Jesse Mwansa
+Course course1 = new Course("G500", "BSc Data Science");
+Student student1 = new Student("Jesse Mwansa", 22140600);
+student1.enrol(course1);
+course1.print();
+
+ Course G500: BSc Data Science
+
+Module co452 = new Module("CO452", "Programming concepts");
+course1.addModule(co452);
+Student student2 = new Student("John", 22150700);
+ModuleMark jesseCo452 = new ModuleMark(co452);
+jesseCo452.setMark(64);
+ModuleMark johnCo452 = new ModuleMark(co452);
+johnCo452.setMark(90);
+student1.addMark(jesseCo452);
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22140600, Jesse Mwansa
+
+ Course G500: BSc Data Science
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
+student2.addMark(johnCo452);
+Student student1 = new Student("Jesse Mwansa", 22140600);
+Course dataScience = new Course("G500", "BSc Data Science");
+student1.enrol(dataScience);
+Module co452 = new Module("CO452", "Programming concepts");
+dataScience.addModule(co452);
+ModuleMark moduleMa1 = new ModuleMark(co452);
+ModuleMark jesseCo452 = new ModuleMark(co452);
+jesseCo452.setMark(85);
+student1.addMark(jesseCo452);
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22140600, Jesse Mwansa
+
+ Course G500: BSc Data Science
+
+ CO452: 	Programming concepts
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
+Module co450 = new Module("C0450", "Computer Architecture");
+dataScience.addModule(co450);
+Module module1 = new Module("CO453", "Web development");
+Module co453 = new Module("CO453", "Web development");
+dataScience.addModule(co453);
+Module co454 = new Module("CO454", "Database Design");
+dataScience.addModule(co454);
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22140600, Jesse Mwansa
+
+ Course G500: BSc Data Science
+
+ CO452: 	Programming concepts
+ C0450: 	Computer Architecture
+ CO453: 	Web development
+ CO454: 	Database Design
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
