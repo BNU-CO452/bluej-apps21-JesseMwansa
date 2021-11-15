@@ -1,0 +1,114 @@
+Student student1 = new Student("Jesse Mwansa", 22140600);
+Course dataScience = new Course("BB1564", "BSc Data Science");
+student1.enrol(dataScience);
+student1.print();
+ Student ID: 22140600, Jesse Mwansa
+dataScience.print();
+
+ Course BB1564: BSc Data Science
+
+Module co452 = new Module("CO452", "Programming concepts");
+dataScience.addModule(co452);
+ModuleMark co452modulemark = new ModuleMark(co452);
+co452modulemark.setMark(85);
+student1.addMark(co452modulemark);
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22140600, Jesse Mwansa
+
+ Course BB1564: BSc Data Science
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
+Module co453 = new Module("CO453", "Database Design");
+Module co454 = new Module("CO454", "Computer architecture");
+Module co455 = new Module("CO455", "Web development");
+dataScience.addModule(co453);
+dataScience.addModule(co454);
+dataScience.addModule(co455);
+dataScience.print();
+
+ Course BB1564: BSc Data Science
+
+ModuleMark moduleco453 = new ModuleMark(co453);
+student1.addMark(moduleco453);
+moduleco453.setMark(65);
+ModuleMark moduleco454 = new ModuleMark(co454);
+student1.addMark(moduleco454);
+moduleco454.setMark(59);
+ModuleMark moduleco455 = new ModuleMark(co455);
+student1.addMark(moduleco455);
+moduleco455.setMark(76);
+student1.awardTestMarks();
+student1.awardMark("Web development", 76);
+student1.awardMark("Computer architecture", 59);
+student1.awardMark("Database Design", 65);
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22140600, Jesse Mwansa
+
+ Course BB1564: BSc Data Science
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
+dataScience.convertToGrade(65)
+    returned Object NS
+dataScience.convertToGrade(59)
+    returned Object NS
+dataScience.convertToGrade(76)
+    returned Object NS
+dataScience.convertToGrade(85)
+    returned Object NS
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22140600, Jesse Mwansa
+
+ Course BB1564: BSc Data Science
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
+student1.awardTestMarks();
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22140600, Jesse Mwansa
+
+ Course BB1564: BSc Data Science
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
