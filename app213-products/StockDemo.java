@@ -100,19 +100,19 @@ public class StockDemo
      */
     private void sellProducts()
     {
-        stock.sellProduct(101, 950);
-        stock.sellProduct(102, 960);
-        stock.sellProduct(103, 970);
-        stock.sellProduct(104, 980);
-        stock.sellProduct(105, 920);
-        stock.sellProduct(106, 870);
-        stock.sellProduct(107, 965);
-        stock.sellProduct(108, 962);
-        stock.sellProduct(109, 923);
-        stock.sellProduct(110, 989);
-        stock.sellProduct(111, 738);
-        stock.sellProduct(112, 675);
-        stock.sellProduct(113, 972);
+        stock.sellProduct(101, 350);
+        stock.sellProduct(102, 260);
+        stock.sellProduct(103, 170);
+        stock.sellProduct(104, 280);
+        stock.sellProduct(105, 120);
+        stock.sellProduct(106, 370);
+        stock.sellProduct(107, 465);
+        stock.sellProduct(108, 262);
+        stock.sellProduct(109, 123);
+        stock.sellProduct(110, 189);
+        stock.sellProduct(111, 138);
+        stock.sellProduct(112, 275);
+        stock.sellProduct(113, 172);
         
     }
     
@@ -121,7 +121,7 @@ public class StockDemo
      */
     public void remove(int productID)
     {
-        stock.remove(productID); 
+        stock.remove(113); 
     }
     
   
