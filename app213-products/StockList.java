@@ -28,6 +28,13 @@ public class StockList
     {
         stock.add(item);
     }
+    /**
+     * Removing one of the products
+     */
+    public void remove(int productID)
+    {
+        stock.remove(productID); 
+    }
     
     /**
      * A method to buy a single quantity of the product
@@ -79,6 +86,7 @@ public class StockList
         }
         return null;
     }
+    
     
     /**
      * Sell one of the given product.

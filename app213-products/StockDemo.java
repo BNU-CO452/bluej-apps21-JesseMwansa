@@ -41,8 +41,11 @@ public class StockDemo
         stock.add(new Product(112, "Nokia 130"));
         stock.add(new Product(113, "LG G6"));
         
+        
+        
         runDemo();
     }
+    
     
     /**
      * Provide a demonstration of how the ProductList meets all
@@ -61,7 +64,11 @@ public class StockDemo
         stock.print();        
 
         sellProducts();
-        stock.print();        
+        stock.print(); 
+        
+        
+        
+        
     }
     
     
@@ -70,11 +77,22 @@ public class StockDemo
      */
     private void buyProducts()
     {
-        for(int i = 101; i <= 113; i++)
-    { 
-        stock.buyProduct(i, random.nextInt(1001));
-        
-    }
+        stock.buyProduct(101, 500);
+        stock.buyProduct(102, 550);
+        stock.buyProduct(103, 450);
+        stock.buyProduct(103, 600);
+        stock.buyProduct(104, 300);
+        stock.buyProduct(105, 200);
+        stock.buyProduct(105, 700);
+        stock.buyProduct(106, 800);
+        stock.buyProduct(107, 900);
+        stock.buyProduct(108, 750);
+        stock.buyProduct(109, 840);
+        stock.buyProduct(110, 720);
+        stock.buyProduct(111, 670);
+        stock.buyProduct(112, 100);
+        stock.buyProduct(113, 450);
+    
     }  
 
     /*
@@ -82,10 +100,30 @@ public class StockDemo
      */
     private void sellProducts()
     {
-        for(int i = 101; i <= 113; i++)
-    {
-        stock.sellProduct(i, random.nextInt(1001));
+        stock.sellProduct(101, 950);
+        stock.sellProduct(102, 960);
+        stock.sellProduct(103, 970);
+        stock.sellProduct(104, 980);
+        stock.sellProduct(105, 920);
+        stock.sellProduct(106, 870);
+        stock.sellProduct(107, 965);
+        stock.sellProduct(108, 962);
+        stock.sellProduct(109, 923);
+        stock.sellProduct(110, 989);
+        stock.sellProduct(111, 738);
+        stock.sellProduct(112, 675);
+        stock.sellProduct(113, 972);
         
-    }    
     }
+    
+    /**
+     * Removing one of the products
+     */
+    public void remove(int productID)
+    {
+        stock.remove(productID); 
+    }
+    
+  
+    
 }    
