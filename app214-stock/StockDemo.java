@@ -34,7 +34,7 @@ public class StockDemo
         stock.add(new Product(105, "Samsung Galaxy S12"));
         stock.add(new Product(106, "OnePlus 9"));
         stock.add(new Product(107, "Samsung Galaxy Note 20"));
-        stock.add(new Product(108, "Huawei GX8")); 
+        stock.add(new Product(108, "Huawei GX8"));    
         stock.add(new Product(109, "Microsoft 640"));
         stock.add(new Product(110, "Nokia 3310"));
         stock.add(new Product(111, "Sony Experia XZ"));
