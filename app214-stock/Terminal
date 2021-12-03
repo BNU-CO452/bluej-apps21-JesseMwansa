@@ -1,0 +1,182 @@
+quit
+Program program1 = new Program();
+Program.main({ });
+
+ Jesse's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 0
+ ID 102: Apple iPhone 12 stock level: 0
+ ID 103: Google Pixel 4A stock level: 0
+ ID 104: Apple iPhone 11 stock level: 0
+ ID 105: Samsung Galaxy S12 stock level: 0
+ ID 106: OnePlus 9 stock level: 0
+ ID 107: Samsung Galaxy Note 20 stock level: 0
+ ID 108: Huawei GX8 stock level: 0
+ ID 109: Microsoft 640 stock level: 0
+ ID 110: Nokia 3310 stock level: 0
+ ID 111: Sony Experia XZ stock level: 0
+ ID 112: Nokia 130 stock level: 0
+ ID 113: LG G6 stock level: 0
+
+Not enough shelf space for Samsung Galaxy S20. Please sell the existing stock 
+Not enough shelf space for Apple iPhone 12. Please sell the existing stock 
+Not enough shelf space for Google Pixel 4A. Please sell the existing stock 
+Not enough shelf space for Google Pixel 4A. Please sell the existing stock 
+Not enough shelf space for Apple iPhone 11. Please sell the existing stock 
+Not enough shelf space for Samsung Galaxy S12. Please sell the existing stock 
+Not enough shelf space for Samsung Galaxy S12. Please sell the existing stock 
+Not enough shelf space for OnePlus 9. Please sell the existing stock 
+Not enough shelf space for Samsung Galaxy Note 20. Please sell the existing stock 
+Not enough shelf space for Huawei GX8. Please sell the existing stock 
+Not enough shelf space for Microsoft 640. Please sell the existing stock 
+Not enough shelf space for Nokia 3310. Please sell the existing stock 
+Not enough shelf space for Sony Experia XZ. Please sell the existing stock 
+Not enough shelf space for Nokia 130. Please sell the existing stock 
+Not enough shelf space for LG G6. Please sell the existing stock 
+
+ Jesse's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 0
+ ID 102: Apple iPhone 12 stock level: 0
+ ID 103: Google Pixel 4A stock level: 0
+ ID 104: Apple iPhone 11 stock level: 0
+ ID 105: Samsung Galaxy S12 stock level: 0
+ ID 106: OnePlus 9 stock level: 0
+ ID 107: Samsung Galaxy Note 20 stock level: 0
+ ID 108: Huawei GX8 stock level: 0
+ ID 109: Microsoft 640 stock level: 0
+ ID 110: Nokia 3310 stock level: 0
+ ID 111: Sony Experia XZ stock level: 0
+ ID 112: Nokia 130 stock level: 0
+ ID 113: LG G6 stock level: 0
+
+The product Samsung Galaxy S20is out of stock
+The product Apple iPhone 12is out of stock
+The product Google Pixel 4Ais out of stock
+The product Apple iPhone 11is out of stock
+The product Samsung Galaxy S12is out of stock
+The product OnePlus 9is out of stock
+The product Samsung Galaxy Note 20is out of stock
+The product Huawei GX8is out of stock
+The product Microsoft 640is out of stock
+The product Nokia 3310is out of stock
+The product Sony Experia XZis out of stock
+The product Nokia 130is out of stock
+The product LG G6is out of stock
+
+ Jesse's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 0
+ ID 102: Apple iPhone 12 stock level: 0
+ ID 103: Google Pixel 4A stock level: 0
+ ID 104: Apple iPhone 11 stock level: 0
+ ID 105: Samsung Galaxy S12 stock level: 0
+ ID 106: OnePlus 9 stock level: 0
+ ID 107: Samsung Galaxy Note 20 stock level: 0
+ ID 108: Huawei GX8 stock level: 0
+ ID 109: Microsoft 640 stock level: 0
+ ID 110: Nokia 3310 stock level: 0
+ ID 111: Sony Experia XZ stock level: 0
+ ID 112: Nokia 130 stock level: 0
+ ID 113: LG G6 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Jesse Mwansa
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Add
+Adding a new product
+
+Please enter a product id>
+147
+Please enter the product name>
+Your input is blank!
+
+Please enter the product name>Samsung Galaxy S10
+
+ Jesse's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 0
+ ID 102: Apple iPhone 12 stock level: 0
+ ID 103: Google Pixel 4A stock level: 0
+ ID 104: Apple iPhone 11 stock level: 0
+ ID 105: Samsung Galaxy S12 stock level: 0
+ ID 106: OnePlus 9 stock level: 0
+ ID 107: Samsung Galaxy Note 20 stock level: 0
+ ID 108: Huawei GX8 stock level: 0
+ ID 109: Microsoft 640 stock level: 0
+ ID 110: Nokia 3310 stock level: 0
+ ID 111: Sony Experia XZ stock level: 0
+ ID 112: Nokia 130 stock level: 0
+ ID 113: LG G6 stock level: 0
+ ID 147: Samsung Galaxy S10 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Jesse Mwansa
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Remove
+Please enter a product id>
+113
+Please enter the name of the product:
+Your input is blank!
+
+Please enter the name of the product:LG G6
+Product113,LG G6 has been removed
+********************************
+  App21-04: Stock Application 
+      by Jesse Mwansa
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Print
+
+ Jesse's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 0
+ ID 102: Apple iPhone 12 stock level: 0
+ ID 103: Google Pixel 4A stock level: 0
+ ID 104: Apple iPhone 11 stock level: 0
+ ID 105: Samsung Galaxy S12 stock level: 0
+ ID 106: OnePlus 9 stock level: 0
+ ID 107: Samsung Galaxy Note 20 stock level: 0
+ ID 108: Huawei GX8 stock level: 0
+ ID 109: Microsoft 640 stock level: 0
+ ID 110: Nokia 3310 stock level: 0
+ ID 111: Sony Experia XZ stock level: 0
+ ID 112: Nokia 130 stock level: 0
+ ID 113: LG G6 stock level: 0
+ ID 147: Samsung Galaxy S10 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Jesse Mwansa
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > Quit
