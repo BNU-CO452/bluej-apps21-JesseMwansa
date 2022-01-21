@@ -13,7 +13,7 @@
  * @author  Michael Kölling and David J. Barnes
  * @version 2016.02.29
  * 
- * Modified and extended by Student Name
+ * Modified and extended by Jesse Mwansa
  */
 
 public class Game 
@@ -56,8 +56,8 @@ public class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println(" Welcome to the World of Zuul!");
-        System.out.println(" World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println(" Welcome to VAMP game!");
+        System.out.println(" Your goal is to kill a vampire and collect it's blood to create a serum at the laboratory.");
         System.out.println(" Type 'help' if you need help.");
         System.out.println();
         System.out.println(MAP.getCurrentLocation().getLongDescription());

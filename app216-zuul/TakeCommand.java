@@ -19,9 +19,9 @@ public class TakeCommand extends ZuulCommand
     public TakeCommand(Game zuul, String item)
     {
         super(zuul);
-        this.item = item;
+        this.item = item; 
     }    
-
+ 
     public void execute()
     {
         if(item == null) 

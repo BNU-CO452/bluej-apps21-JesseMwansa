@@ -13,7 +13,7 @@ import java.util.Iterator;
  * location stores a reference to the neighboring locations.
  * 
  * @author  Michael Kölling and David J. Barnes
- * Modified by Derek Peacock & Nicholas Day
+ * Modified by Jesse Mwansa
  * @version 2016.02.29
  */
 
