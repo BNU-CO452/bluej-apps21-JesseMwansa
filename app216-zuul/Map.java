@@ -3,10 +3,12 @@
  * This class is reponsible for creating and
  * linking all the Locations in the game to
  * form a 2D or 3D network
- *
- *  [Pub]<---->[Outside]<---->[Theatre]
- *                 |
- *          [Computer Lab]<---->[Office]
+ *      
+ *  [Outside]
+ *      |
+ *  [Church]<------------>[Theatre]
+ *      |                     |
+ *  [Scientific Lab]<---->[Vamp Cave]
  *             
  * @author Derek Peacock and Nicholas Day
  * @version 2021-08-22
@@ -15,7 +17,7 @@ public class Map
 {
     // Need to add a list of exits
     
-    private Location outside, theater, pub, lab, office;
+    private Location outside, church, forest, vampcave, lab;
 
     private Location currentLocation;
 
@@ -35,10 +37,9 @@ public class Map
      */
     private void createLocations()
     {
-        createOutside();
-        createTheatre();
-        createPub();
-        createOffice();
+        createChurch();
+        createForest();
+        createVampcave();
         createLab();
 
         currentLocation = outside;  // start game outside
@@ -46,58 +47,61 @@ public class Map
     
     /**
      * Create the outside and link it to the
-     * theatre, lab and pub
+     * church
      */
     private void createOutside()
     {
-        outside = new Location("outside the main entrance of the university");
+        outside = new Location("outside the main entrance of the church");
         
     }
     
     /**
-     * Create the pub and link it to the outside
+     * Create the church
      */
-    private void createPub()
+    private void createChurch()
     {
-        pub = new Location("in the campus pub");
+        church = new Location("in the sacred Church.");
         
-        pub.setExit("east", outside);
-        outside.setExit("west", pub);
+        church.setExit("east", forest);
+        outside.setExit("south", church);
     }
     
     /**
-     * Create the theatre linked to the outside
+     * Create the forest linked to the vampcave
      */
-    private void createTheatre()
+    private void createForest()
     {
-        theater = new Location("in a lecture theater");
+        forest = new Location("in the mystical forest.");
         
-        theater.setExit("west", outside);
-        outside.setExit("east", theater);
+        forest.setExit("south", vampcave);
+        vampcave.setExit("north", forest);
     }
     
     /**
-     * Create the office linked to the lab
+     * Create the vampcave linked to the lab
      */
-    private void createOffice()
+    private void createVampcave()
     {
-        office = new Location("in the computing admin office");
+        vampcave = new Location("in the feared vampcave");
+        
+        vampcave.setExit("west", lab);
+        lab.setExit("east", vampcave);
         
     }
     
     /**
-     * Create the lab and link it to the outside and office
+     * Create the lab and link it to the church and vampcave
      */
     private void createLab()
     {
         // create the Locations
-        lab = new Location("in a computing lab");
+        lab = new Location("in a scientific lab");
         
-        lab.setExit("east", office);
-        office.setExit("west", lab);
+        lab.setExit("east", vampcave);
+        vampcave.setExit("west", lab);
         
-        lab.setExit("north", outside);
-        outside.setExit("south", lab);
+        lab.setExit("north", church);
+        church.setExit("south", lab);
     }
     
     public Location getCurrentLocation()
