@@ -23,7 +23,7 @@ public class HelpCommand extends ZuulCommand
         System.out.println(" The priest soon tells you to travel to the vampire cave.");        
         System.out.println(" There you are to kill a vampire and collect it's blood.");
         System.out.println("This blood will be used to create a vaccine against vampire bites.");
-        System.out.println(" Your command words are:");
+        System.out.println(" Your command words are: go, yes and no");
         System.out.println();
         
         for(CommandWords command : CommandWords.values())
