@@ -21,13 +21,17 @@ public class Game
     public final Map MAP;
     private CommandReader reader;
     private boolean gameOver;
-        
+    
+    public Player Player;
+    int score;
+    int playerHP;
     /**
      * Create the game and initialise its internal map.
      */
     public Game() 
     {
         MAP = new Map();
+        Player = new Player("Jesse", 100);
         reader = new CommandReader(this);
     }
 
@@ -57,8 +61,13 @@ public class Game
     {
         System.out.println();
         System.out.println(" Welcome to VAMP game!");
+        System.out.println(" For many years the vampires have been ravishing the lands.");
+        System.out.println(" Many have turned into these evil beings after being biten.");
+        System.out.println(" It is up tp you make a change and become the savior that the people.");
         System.out.println(" Your goal is to kill a vampire and collect it's blood to create a serum at the laboratory.");
         System.out.println(" Type 'help' if you need help.");
+        System.out.println(" Your score is " + score);
+        System.out.println(" Your health is " + 100);
         System.out.println();
         System.out.println(MAP.getCurrentLocation().getLongDescription());
     }

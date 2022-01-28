@@ -1,0 +1,6 @@
+Application Evaluation
+1. It could be improved by keeping track of the score.
+2. Creating characters to interct with.
+3. Creating enemies with attributes.
+4. Allowing items to have certain level of durability.
+5. Creating an inventory.

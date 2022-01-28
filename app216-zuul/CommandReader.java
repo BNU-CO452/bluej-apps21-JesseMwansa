@@ -20,7 +20,7 @@ public class CommandReader
 {
     private Game game;
     private Scanner reader; // source of command input
-
+    
     private String commandWord = null;
     private String word2 = null;
     /**
@@ -67,6 +67,7 @@ public class CommandReader
             GoCommand go = new GoCommand(game, word2);
             go.execute();
         }
+        
         else if(commandWord.equals(CommandWords.TAKE.word))
         {
             TakeCommand take = new TakeCommand(game, word2);

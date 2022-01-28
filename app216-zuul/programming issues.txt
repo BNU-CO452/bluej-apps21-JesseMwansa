@@ -1,0 +1,10 @@
+1. Could not get item.
+2. Could not carry score from previous location to new location
+3. Does not display player name.
+4. The health of the player resets at each location.
+5. Failed to create new commands.
+6. Did not manage to create an inventory.
+7. Issue creating an enemy object.
+8. Could not call an item for use.
+9. Did not manage to categorise items.
+10. Could not create characters to interact with player.

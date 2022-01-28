@@ -29,6 +29,8 @@ public class Map
     public Game game;
     
     public Item item;
+    
+    public Player player;
 
     /**
      * Constructor for objects of class Map
@@ -78,7 +80,7 @@ public class Map
     {
         church = new Location("in the sacred Church.");
         
-        church.setExit("east", cabin);
+        church.setExit("north", outside);
         outside.setExit("south", church);
         
         church.setItem(new Item("Scroll", "Contains sacred scriptures that keep you safe."));
@@ -88,8 +90,8 @@ public class Map
     {
         cabin = new Location("cabin full of supplies.");
         
-        cabin.setExit("east", forest);
-        forest.setExit("west", cabin);
+        cabin.setExit("west", church);
+        church.setExit("east", cabin);
         
         cabin.setItem(new Item("Enchanted Shotgun", "This has holy water to burn vampires."));
     }
@@ -101,10 +103,10 @@ public class Map
     {
         forest = new Location("in the mystical forest.");
         
-        forest.setExit("south", bridge);
-        bridge.setExit("north", forest);
+        forest.setExit("west", cabin);
+        cabin.setExit("east", forest);
         
-        forest.setItem(new Item("HP", "Boosts health."));
+        forest.setItem(new Item("Medkit", "Boosts health."));
     }
     
     /**
@@ -113,26 +115,10 @@ public class Map
      */
     private void createBridge()
     {
-        bridge = new Location("the shaky bridge");
+        bridge = new Location("at the shaky bridge");
         
-        bridge.setExit("south west", vampcave);
-        vampcave.setExit("north east", bridge);
-        
-        bridge.setExit("south east", deathpit);
-        deathpit.setExit("north west", bridge);
-        
-    }
-    
-    /**
-     * Create the deathpit and link it to the
-     * forest
-     */
-    private void createDeathpit()
-    {
-        deathpit = new Location("the deadly pit");
-        
-        deathpit.setExit("north west", bridge);
-        bridge.setExit("south east", deathpit);
+        bridge.setExit("north", forest);
+        forest.setExit("south", bridge);
         
         
     }
@@ -144,8 +130,23 @@ public class Map
     {
         vampcave = new Location("in the feared vampcave");
         
-        vampcave.setExit("west", lab);
-        lab.setExit("east", vampcave);
+        vampcave.setExit("northeast", bridge);
+        bridge.setExit("southwest", vampcave);
+        
+        vampcave.setExit("east", deathpit);
+
+        
+    }
+    
+    private void createDeathpit()
+    {
+        deathpit = new Location("the deadly pit");
+        
+        deathpit.setExit("northwest", bridge);
+        bridge.setExit("southeast", deathpit);
+        
+        deathpit.setExit("west", vampcave);
+        vampcave.setExit("east", deathpit);
         
     }
     
