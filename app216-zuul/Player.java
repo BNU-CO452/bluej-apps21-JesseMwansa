@@ -30,28 +30,40 @@ public class Player
     }
 
     /**
-     * 
+     * Give player a name
      */
     public String getName()
     {
         return name;
     }
     
-     public void increaseScore(int amount)
+    /*
+     * Increase the players  score
+     */
+    public void increaseScore(int amount)
     {
         score += amount;
     }
     
+    /*
+     * Decrease the players  score
+     */
     public void decreaseScore(int amount)
     {
         score -= amount;
     }
     
+    /*
+     * Collect players score
+     */
     public int getScore()
     {
      return score;
     }
     
+    /*
+     * Give player a score
+     */
     public int setScore( int amount)
     {
      return score = amount;

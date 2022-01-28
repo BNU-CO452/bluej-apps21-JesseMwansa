@@ -51,13 +51,21 @@ public class GoCommand extends ZuulCommand
             map.enterLocation(nextLocation);
             System.out.println(map.getCurrentLocation().getLongDescription());
             
-             if(map.currentLocation == map.church)
+             
+            /*
+             * Creating instructions for player to follow
+             */
+            if(map.currentLocation == map.church)
            {
              System.out.println("You have picked up a scroll."); 
              System.out.println("Do you want to read it. Yes or no?"); 
              System.out.print(" > ");
              ans = reader.nextLine().toLowerCase();
              
+             
+             /*
+              * Method for player to make a choice
+              */
              if (ans.equals("yes"))
              {
                System.out.println("You will now be protected by the scriptures."); 
